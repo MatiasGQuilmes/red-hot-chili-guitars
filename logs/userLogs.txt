@@ -1,0 +1,1 @@
+El usuario ingreso a la ruta: /users/auth/google/callback?code=4%2F0AY0e-g4PLWAS8maNlYgD_Y2RHfa-PaxwsoVv2M9a_NXfbW2pm-lijZpqqRRS0aSU2Ocj1A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent

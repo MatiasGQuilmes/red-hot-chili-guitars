@@ -1,0 +1,93 @@
+<!-- head -->
+<%- include('partials/head')  %>
+<!-- /head --> 
+
+<body>
+    <div class="detalle-main">
+        <!-- header -->    
+        <%- include('partials/header')  %>
+        <!-- /header -->
+
+        <section class="detalle-product">
+
+        <h1 class="title-main"><%= producto.categorias.name %></h1>
+
+            <div class="detalle-container">
+                
+                <div class="detalle-subContainer">
+                    
+                    <div class="detalle-images">
+                        <h2 class="sub-title"><%= producto.instrument %> <%= producto.mark %></h2>
+                        
+                        <div class="img-display">
+                            <figure class="img-container">
+                                <img src="/img/instrumentos/<%= producto.imagenes[0].name%>" alt="" class="img--detalle">
+                            </figure>
+                            
+                            <div class="img-gallery">
+                                <div class="img-sub">
+                                    <img src="/img/instrumentos/<%= producto.imagenes[0].name%>" alt="" class="img--detalle">
+                                </div>
+                                <div class="img-sub">
+                                    <img src="/img/instrumentos/<%= producto.imagenes[0].name%>" alt="" class="img--detalle">
+                                </div>
+                                <div class="img-sub">
+                                    <img src="/img/instrumentos/<%= producto.imagenes[0].name%>" alt="" class="img--detalle">
+                                </div>
+        
+        
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    <div class="detalle-datos">
+                        <h2 class="detalle-title">modelo:</h2>
+                        <p class="detalle-text">
+                            <%= producto.model %>
+                        </p>
+                        
+                        <h2 class="detalle-title">tipo:</h2>
+                        <p class="detalle-text">
+                            <%= producto.type %>
+                        </p>
+                        
+                        <h2 class="detalle-title">color:</h2>
+                        <p class="detalle-text">
+                            <%= producto.color %>
+                        </p>
+
+                        <h2 class="detalle-title">precio:</h2>
+                        <p class="detalle-text">
+                            $<%= producto.price %>
+                        </p>
+                        
+                        <h2 class="detalle-title">descripcion:</h2>
+                        <p class="detalle-text">
+                            <%= producto.description %>
+                        </p>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <a href="" class="btn--detalle">comprar!</a>
+                    <a href="" class="btn--detalle">agregar al carrito</a>
+                </div>
+                
+
+            </div>
+
+        
+        </section>
+
+
+
+
+
+        <!-- footer -->
+        <%- include('partials/footer')  %> 
+        <!-- footer -->
+    </div>
+    
+</body>
+</html>
